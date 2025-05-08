@@ -22,5 +22,8 @@ class Solution(object):
         return root
 
 
-#This works because Python evaluates the right-hand side fully before assigning to the left-hand side. So both recursive calls happen with the original children.
+### NOTES
+# Instead of doing explicit swap, you can do the following
 #root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+#This works because Python evaluates the right-hand side fully before assigning to the left-hand side. So both recursive calls happen with the original children.
+
